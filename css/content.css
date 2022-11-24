@@ -1,0 +1,17 @@
+.content0 {
+    margin-left: 253px;
+    background-color: #fff;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+}
+
+
+/*#check:checked ~ .content{
+    margin-left: 60px;
+  }*/
+
+#check {
+    display: none;
+}

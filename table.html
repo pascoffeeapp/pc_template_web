@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kopi Pas</title>
+    <!-- <link rel="stylesheet" href="css/dash.css"> -->
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.css" />
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <div class="header">
+        <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      
+      <div class="left_area">
+        <h3>KOPI<span> PAS</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="login.html" class="logout_btn">Logout</a>
+      </div>
+    </div>
+    <!--header area end-->
+    <!--sidebar start-->
+    <section class="sidebar">
+      <center>
+        <img src="images/Logo_dasboard.png" class="profile_image" alt="Logo_dasboard">
+        <div class="title_icon"><h4>KOPI<span> PAS</span></h4></div>
+      </center>
+        <div class="sidebar_menu"> 
+          <a href="table.html"><i class="fa-sharp fa-solid fa-table"></i><span>Table</span></a>
+          <a href="tables.html"><i class="fa-solid fa-credit-card"></i><span>Tables</span></a>
+          <a href="takeway.html"><i class="fa-solid fa-chair"></i><span>Takeway</span></a>
+        </div>
+    </section>
+    <!--sidebar end-->
+
+    <div class="content">
+          <h2>Tabel List</h2>
+          <table>
+            <tr>
+              <td style="vertical-align: middle">
+                <button id="add_tabelBtn"><i class="fa-solid fa-plus"></i></button>
+                <!-- Trigger/Open The Modal -->
+                <div id="add_Modal" class="modal">
+                <!-- Modal content -->
+                <div class="add-modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+              </div>
+            
+              <!--Search-->
+              <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+              </td>
+            </tr>
+          </table>
+
+        <table>
+          <tr>
+            <th width="10%">Code Table</th>
+            <th width="20%">edit</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+                <!-- Trigger/Open The Modal -->
+                <button id="editBtn"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                  <div id="edit_Modal" class="modal">
+                  <!-- Modal content -->
+                  <div class="edit-modal-content">
+                  </div>
+                </div>
+            </td>
+          </tr>
+          
+          
+          <tr>
+            <td>2</td>
+            <td>
+                <!-- Trigger/Open The Modal -->
+                <button id="editBtn1"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                  <div id="edit_Modal1" class="modal1">
+                  <!-- Modal content -->
+                  <div class="edit-modal-content1">
+                  </div>
+                </div>
+            </td>
+          </tr>
+        </table>
+        
+    </div>
+    
+    <script>
+        // Get the modal edit button
+        var modal = document.getElementById("edit_Modal");
+        var btn = document.getElementById("editBtn");
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        //Get the model edit button
+        var modal = document.getElementById("edit_Modal1");
+        var btn = document.getElementById("editBtn1");
+        var span = document.getElementsByClassName("close1")[0];
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        //Get the model add button
+        var modal = document.getElementById("add_Modal");
+        var btn = document.getElementById("add_tabelBtn");
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+  </body>
+</html>
