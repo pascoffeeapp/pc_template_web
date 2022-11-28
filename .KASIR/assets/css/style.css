@@ -40,7 +40,7 @@
   padding-left: 5px;
 }
 #header .btn-primary:hover{
-  background-color: #ffc49d !important;
+  background-color: #E1CFC1 !important;
 }
 
 /* SIDEBAR */
@@ -50,18 +50,14 @@
   height: calc(100vh - 4rem);
   transition: 0.3s;
 }
-#wrapper .cangkir{
-  padding: 5px;
-
-}
 #wrapper #sidebar {
   background-color: #E1CFC1;
   transition: 0.3s;
-  background-image: url("../logo_dasboard.png");
+  background-image: url("../");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 50px;
+  padding-top: 0;
 }
 #wrapper #sidebar .sidebar-item {
   text-decoration: none;
