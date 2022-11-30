@@ -16,6 +16,8 @@
     <!-- Default Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Icon Takeaway -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -40,7 +42,7 @@
 
         <div id="sidebar">
             <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
-            <a href="index.html" class="sidebar-item">
+            <!-- <a href="index.html" class="sidebar-item">
                 <div class="icon"><i class="fa fa-tachometer-alt"></i></div>
                 <div class="text">Dashboard</div>
             </a>
@@ -51,12 +53,22 @@
             <a href="user.html" class="sidebar-item">
                 <div class="icon"><i class="fa fa-light fa-users"></i></div>
                 <div class="text">User</div>
+            </a> -->
+            <a href="table.html" class="sidebar-item">
+                <div class="icon"><i class="fa-solid fa-table"></i></div>
+                <div class="text">Table</div>
             </a>
-            <a href="" class="sidebar-item active">
-                <div class="icon"><i class="fa fa-light fa-chair"></i></div>
+            <a href="tables.html" class="sidebar-item active">
+                <div class="icon"><i class="fa-solid fa-table"></i></div>
                 <div class="text">Tables</div>
             </a>
-            <a href="menu.html" class="sidebar-item">
+            <a href="takeway.html" class="sidebar-item">
+                <div class="icon">
+                    <i class='fas fa-shopping-bag'></i>
+                </div>
+                <div class="text">Takeaway</div>
+            </a>
+            <!-- <a href="menu.html" class="sidebar-item">
                 <div class="icon"><i class="fa fa-coffee"></i></div>
                 <div class="text">Menu</div>
             </a>
@@ -71,143 +83,140 @@
             <a href="wallet.html" class="sidebar-item">
                 <div class="icon"><i class="fa fa-wallet"></i></div>
                 <div class="text">Wallet</div>
-            </a>
+            </a> -->
 
             <!-- <div class="devider"></div> -->
         </div>
 
-        <div class="container py-3">
-            <h1>Hello World</h1>
+        <div id="content">
+            <!-- <img src="assets/coffee_content.svg" alt=""> -->
+            <div class="container py-3">
+                <h1>KOPI PAS</h1>
 
-            <div class="rounded shadow-sm p-3 bg-white">
+                <div class="rounded shadow-sm p-3 bg-white">
 
-                <div class="container mb-5">
-                    <div class="row row-cols-2">
-                        <div class="col-sm-7">
-                            <!-- + Add Button -->
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    + Add
-                                </button>
-
+                    <div class="container mb-5">
+                        <div class="row row-cols-2">
+                            <div class="col-sm-7">
+                                <!-- + Add Button -->
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contohModal">
+                                        + Add
+                                    </button>
+                            </div>
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Role</h1>
+                                            <h5 class="modal-title fs-5" id="exampleModalLabel">Add Table</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label"><b>Name :</b></label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name or username">
-                                            </div>
-
-                                            <br><b>Role :</b>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Owner
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                  Admin
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Cashier
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Owner Outlet
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Manager
-                                                </label>
-                                            </div>
-
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Menambah Nomor Meja :</b></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nomor Meja">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-success">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3 ms-auto">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
+                            <!-- search -->
+                            <div class="col-sm-3 ms-auto">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!--Table content-->
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
+                    <!--Table content-->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
 
-                            <th class="col-sm-2">Code Table</th>
-                            <th class="col-sm-2">Edit</th>
-                            <th class="col-sm-2">Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th class="d-grid mx-auto">1</th>
+                                <th class="col-sm-2">Code Table</th>
+                                <th class="col-sm-2">Edit</th>
+                                <th class="col-sm-2">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="d-grid mx-auto">1</th>
 
-                            <td>
-                                <!--Button edit role-->
-                                <!-- Button trigger modal -->
-                                <div class="d-grid gap-2 mx-auto">
-                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fa fa-solid fa-pen-to-square"></i>
-                            </button>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Role</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <!--Modal content ... -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <td>
+                                    <!--Button edit role-->
+                                    <!-- Button trigger modal -->
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Role</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <b>Status Table :</b>
+                                                    <div class="form-check">
+                                                        <button type="button" class="btn btn-success">Meja Kosong</button>
+                                                        <button type="button" class="btn btn-danger">Meja Terisi</button>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">
+                                                        <b class="modal-title fs-5">Save changes</b>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <!--Button delete role-->
-                                <!-- Button trigger modal -->
-                                <div class="d-grid gap-2 mx-auto">
-                                    <button type="button" class="btn btn-danger">
-                                <i class="fa fa-solid fa-trash-can"></i>
-                            </button>
-                                </div>
-                            </td>
-                        </tr>
+                                </td>
+                                <td>
+                                    <!--Button delete role-->
+                                    <!-- Button trigger modal -->
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampledeleteModal">
+                                            <i class="fa fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampledeleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Role</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <b class="modal-title fs-5">APAKAH ANDA YAKIN MENGHAPUS MEJA INI</b>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">
+                                                        <b class="modal-title fs-5">IYA</b>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary">
+                                                        <b class="modal-title fs-5">TIDAK</b>
+                                                    </button>
 
-                    </tbody>
-                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
