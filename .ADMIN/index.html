@@ -14,7 +14,6 @@
 
     <!-- Default Style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
 
 </head>
 <body>
@@ -29,11 +28,8 @@
         <div class="btn-logout ms-auto">
             <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
         </div>
-        
-        
-
-
     </div>
+    
     <div id="wrapper" class="hide">
         
         <div id="sidebar">
@@ -74,18 +70,89 @@
             <!-- <div class="devider"></div> -->
         </div>
         
+        <!-- Main Content -->
         <div id="content">
-            <!-- <img src="assets/coffee_content.svg" alt=""> -->
-            <div class="container py-3">
-                <h1>Hello World</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, atque.</p>
 
-                <div class="rounded shadow-sm p-3 bg-white">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolore excepturi, omnis dignissimos tempora magnam maiores sequi beatae eveniet culpa.
-                    lorem1000
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4 pt-5">
+                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                 </div>
+
+                <!-- Content Row -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Earnings (Monthly)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Earnings (Yearly)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Row -->
+
+                <div class="row">
+
+                    <!-- Area Chart -->
+                    <div class="col-xl col-lg">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+
             </div>
+            <!-- /.container-fluid -->
+
         </div>
+        <!-- End of Main Content -->
     </div>
 
     <!-- Bootstrap Script -->
@@ -95,6 +162,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
 
     <script src="assets/js/script.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin.min.js"></script>
+    
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+    
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
 
 </body>
 </html>
