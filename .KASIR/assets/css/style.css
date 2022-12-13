@@ -69,7 +69,7 @@
     padding-top: 0;
 }
 
-#wrapper #sidebar .logoSidebar{
+#wrapper #sidebar .logoSidebar {
     text-decoration: none;
     display: grid;
     grid-template-columns: 4rem auto;
@@ -80,7 +80,7 @@
     color: #6A4334;
     transition: 0.2s;
     border-radius: 0 8px 8px 0;
-  }
+}
 
 #wrapper #sidebar .sidebar-item {
     text-decoration: none;
@@ -190,7 +190,7 @@
 
 .btn-dark {
     background-color: #693e13!important;
-    color: #ffffff !important;
+    color: #000000 !important;
     font-style: bold !important;
     border: none;
     padding-top: 1px;
@@ -208,18 +208,16 @@
     font-variant-position: center;
 }
 
-.btn-close-white {
-    background-color: #3BBA00!important;
+.btn-checkout {
+    background-color: #3BBA00 !important;
     color: #000000 !important;
     font-style: bold !important;
     border: none;
-    padding-top: 1px;
-    padding-right: 5px;
-    border-image-source: 1px;
+    padding-left: 5px;
     float: right;
 }
 
-.btn-close-white:hover {
+.btn-checkout:hover {
     background-color: #318003 !important;
 }
 
