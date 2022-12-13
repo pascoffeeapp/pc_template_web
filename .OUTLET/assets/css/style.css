@@ -104,13 +104,10 @@
   margin: auto;
   border-bottom: 0.1px solid #DFD3C3;
 }
-
 #wrapper #content {
   transition: 0.3s;
-  background-color: #FFF8EA;
-  background-image: url("../coffee_content.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #fafafa;
+
   background-position: right bottom;
 }
 #wrapper.hide {
@@ -141,4 +138,12 @@
 .table th{
   font-style: bold;
   font-variant-position: center;
+}
+.col{
+  background-color: #6A4334;
+  color: #fff3eb;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }

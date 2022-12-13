@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Coffee</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+<body>
+   
+    <div id="header">
+        <div id="toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo">
+            <b>KOPI PAS</b>
+        </div>
+        <div class="btn-logout ms-auto">
+            <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
+        </div>
+    </div>
+    
+    <div id="wrapper" class="hide">
+        
+        <div id="sidebar">
+            <img src="assets/logo_dasboard.png" id="logoBrand" class="logoSidebar mx-auto d-block" alt="Image Profile">
+            
+            <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
+            <a href="#" class="sidebar-item">
+                <div class="icon"><i class="fa fa-tachometer-alt"></i></div>
+                <div class="text">Profile</div>
+            </a>
+            <a href="menu.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <div class="text">Menu</div>
+            </a>
+
+            
+            <!-- <div class="devider"></div> -->
+        </div>
+        <div id="content">
+            <!-- <img src="assets/coffee_content.svg" alt=""> -->
+            <div class="container py-3">
+                <h1>Your Profile : Harum</h1>
+                   
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            Update Your Profile
+                        </div>
+                    </div>
+
+                    <img src="assets/logo_dasboard.png" class="rounded mx-auto d-block" alt="Image Profile">
+
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><b>Outlet Name :</b></label>
+                            <input type="username" class="form-control" id="exampleFormControlInput1" placeholder="Outlet name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label"><b>Owner :</b></label>
+                            <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Owner name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label"><b>Description :</b></label>
+                            <br><textarea class="form-control" id="exampleFormControlInput2" placeholder="Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label"><b>Picture :</b></label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
