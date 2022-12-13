@@ -59,6 +59,18 @@
   background-position: top;
   padding-top: 0;
 }
+#wrapper #sidebar .logoSidebar{
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 4rem auto;
+  align-items: center;
+  height: 4rem;
+  width: auto;
+  padding-top: 5px;
+  color: #6A4334;
+  transition: 0.2s;
+  border-radius: 0 8px 8px 0;
+}
 #wrapper #sidebar .sidebar-item {
   text-decoration: none;
   display: grid;
@@ -94,10 +106,8 @@
 }
 #wrapper #content {
   transition: 0.3s;
-  background-color: #FFF8EA;
-  background-image: url("../coffee_content.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #fafafa;
+
   background-position: right bottom;
 }
 #wrapper.hide {
