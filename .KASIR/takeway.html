@@ -42,7 +42,7 @@
 
         <div id="sidebar">
             <img src="assets/logo_dasboard.png" id="logoBrand" class="logoSidebar mx-auto d-block" alt="Image Profile">
-            
+
             <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
             <!-- <a href="index.html" class="sidebar-item">
                 <div class="icon"><i class="fa fa-tachometer-alt"></i></div>
@@ -136,21 +136,21 @@
                         <thead>
                             <tr>
 
-                                <th class="col-sm-2">Code Table</th>
-                                <th class="col-sm-2">Edit</th>
-
+                                <th class="col-sm-2">Nama pesanan</th>
+                                <th class="col-sm-2">Lihat Pesanan</th>
+                                <th class="col-sm-2">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th class="d-grid mx-auto">1</th>
+                                <th class="d-grid mx-auto">Faiza yuwafiqi</th>
 
                                 <td>
                                     <!--Button edit role-->
                                     <!-- Button trigger modal -->
                                     <div class="d-grid gap-2 mx-auto">
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            <i class="fa fa-solid fa-pen-to-square"></i>
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-eye-slash"></i>
                                         </button>
                                     </div>
                                     <!-- Modal -->
@@ -158,29 +158,104 @@
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Role</h1>
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lihat Pesanan</h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
 
-                                                    <b>Status Table :</b>
-                                                    <div class="form-check">
-                                                        <button type="button" class="btn btn-success">Meja Kosong</button>
-                                                        <button type="button" class="btn btn-danger">Meja Terisi</button>
+                                                    <b>Status Pesanan :</b>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th class="col-sm-2">No.</th>
+                                                                <th class="col-sm-2">Nama Pesanan</th>
+                                                                <th class="col-sm-2">Jumlah</th>
+                                                                <th class="col-sm-2">Harga</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">1</th>
+                                                                <td>Ayam Geprek</td>
+                                                                <td>2</td>
+                                                                <td>20.000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">2</th>
+                                                                <td>Ayam Bakar</td>
+                                                                <td>3</td>
+                                                                <td>36.000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">3</th>
+                                                                <td>Teh Hijau Dingin</td>
+                                                                <td>1</td>
+                                                                <td>7.000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">4</th>
+                                                                <td>Teh Dingin</td>
+                                                                <td>1</td>
+                                                                <td>6.000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">5</th>
+                                                                <td>Jus Jeruk</td>
+                                                                <td>1</td>
+                                                                <td>5.000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">6</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">7</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="d-grid mx-auto">8</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="2">Total :</th>
+                                                                <td colspan="2">74.000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-dark"><i class="fa-sharp fa-solid fa-reply"></i>
+                                                            <b class="modal-title fs-5">Back</b>
+                                                        </button>
+                                                        <button type="button" class="btn btn-success">
+                                                            <b class="modal-title fs-5">Done</b>
+                                                        </button>
 
                                                     </div>
+                                                </div>
 
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-success">
-                                                        <b class="modal-title fs-5">Save changes</b>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-
+                                <td>
+                                    <!--Button delete role-->
+                                    <!-- Button trigger modal -->
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    </div>
+                                </td>
                             </tr>
 
                         </tbody>
@@ -199,5 +274,7 @@
     <script src="assets/js/script.js"></script>
 
 </body>
+
+</html>
 
 </html>
