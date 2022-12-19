@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Coffee</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo">
+            <b>KOPI PAS</b>
+        </div>
+        <div class="btn-logout ms-auto">
+            <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
+        </div>
+    </div>
+
+    <div id="wrapper" class="hide">
+
+        <div id="sidebar">
+            <img src="assets/logo_dasboard.png" id="logoBrand" class="logoSidebar mx-auto d-block" alt="Image Profile">
+
+            <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
+            <a href="profie.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-tachometer-alt"></i></div>
+                <div class="text">Profile</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <div class="text">Menu</div>
+            </a>
+
+
+            <!-- <div class="devider"></div> -->
+        </div>
+        <div id="content">
+            <!-- <img src="assets/coffee_content.svg" alt=""> -->
+            <div class="container py-3">
+                <h1>KOPI PAS</h1>
+
+                <div class="Role">
+                    <h1>Menu /</h1>
+                </div>
+
+                <div class="rounded shadow-sm p-3 bg-white">
+
+                    <div class="container mb-5">
+                        <div class="row row-cols-2">
+                            <div class="col-sm-7">
+                                <!-- + Add Button -->
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contohModal">
+                                        + Add Menu
+                                    </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-5" id="exampleModalLabel">Add Table</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput" class="form-label">Menu :</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formGroupExampleInput2" class="form-label">Price :</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                        </div>
+                                        <label for="colFormLabel" class="col-sm-2 col-form-label">Descrition</label>
+                                        <div class="col-sm-10 pb-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- search -->
+                            <div class="col-sm-3 ms-auto">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Table content-->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+
+                                <th class="col-sm-2">Menu</th>
+                                <th class="col-sm-2">Price</th>
+                                <th class="col-sm-2">Edit</th>
+                                <th class="col-sm-2">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="d-grid mx-auto">Soto</th>
+
+                                <th>12000</th>
+
+                                <td>
+                                    <!--Button edit role-->
+                                    <!-- Button trigger modal -->
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#examplemenuModal">
+                                            <i class="fa-solid fa-eye-slash"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Modal -->
+
+                                </td>
+                                <td>
+                                    <!--Button delete role-->
+                                    <!-- Button trigger modal -->
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
