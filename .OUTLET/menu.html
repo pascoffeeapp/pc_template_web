@@ -75,7 +75,7 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title fs-5" id="exampleModalLabel">Add Table</h5>
+                                            <h5 class="modal-title fs-5" id="exampleModalLabel">Add Menu</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="mb-3">
@@ -146,6 +146,69 @@
                                         </button>
                                 </div>
                                 <!-- Modal -->
+                                <div class="modal fade" id="examplemenuModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title fs-5" id="exampleModalLabel">Edit Menu</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Menu :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Menu">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Price :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Price">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Description :</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            <label for="colFormLabel" class="col-sm-2 col-form-label">Picture :</label>
+                                            <div class="col-sm-10 pb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="row">
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary">
+                                                        <b class="modal-title fs-5">Close</b>
+                                                    </button>
+                                                    <button type="button" class="btn btn-success">
+                                                        <b class="modal-title fs-5">Summit</b>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <!--Button delete role-->
+                                <!-- Button trigger modal -->
+                                <div class="d-grid gap-2 mx-auto">
+                                    <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th class="d-grid mx-auto">Ayam Geprek</th>
+
+                            <th>18000</th>
+
+                            <td>
+                                <!--Button edit role-->
+                                <!-- Button trigger modal -->
+                                <div class="d-grid gap-2 mx-auto">
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#examplemenuModal">
+                                            <i class="fa-solid fa-eye-slash"></i>
+                                        </button>
+                                </div>
 
                             </td>
                             <td>
