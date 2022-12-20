@@ -47,14 +47,17 @@
                 <div class="icon"><i class="fa-solid fa-box"></i></div>
                 <div class="text">Stock</div>
             </a>
-
+            <a href="transaction.html" class="sidebar-item">
+                <div class="icon"><i class="fa-solid fa-money-bill"></i></div>
+                <div class="text">Transaction</div>
+            </a>
 
             <!-- <div class="devider"></div> -->
         </div>
         <div id="content">
             <!-- <img src="assets/coffee_content.svg" alt=""> -->
             <div class="container py-3">
-                <h1>KOPI PAS</h1>
+                <h1>Stock List</h1>
 
                 <div class="Role">
                     <h1>Menu /</h1>
@@ -71,39 +74,42 @@
                                     </button>
                             </div>
                             <!-- Modal -->
-                            <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="stock-add" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title fs-5" id="exampleModalLabel">Add Menu</h5>
+                                            <h5 class="modal-title fs-5" id="stock-add">Add Stock</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput" class="form-label">Menu :</label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Menu">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput2" class="form-label">Price :</label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Price">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Description :</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-                                        <label for="colFormLabel" class="col-sm-2 col-form-label">Picture :</label>
-                                        <div class="col-sm-10 pb-3">
-                                            <input class="form-control" type="file" id="formFile">
-                                        </div>
-                                        <div class="row">
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Name Of Item :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name Of Item">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Price :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Price">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Stock :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Stock">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Unit :</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Unit">
+                                            </div>
+                                            <div class="row">
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary">
                                                     <b class="modal-title fs-5">Close</b>
                                                 </button>
-                                                <button type="button" class="btn btn-success">
+                                                    <button type="button" class="btn btn-success">
                                                     <b class="modal-title fs-5">Summit</b>
                                                 </button>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
