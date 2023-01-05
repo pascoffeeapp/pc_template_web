@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Coffee</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Default Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icon Takeaway -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo">
+            <b>KOPI PAS</b>
+        </div>
+        <div class="btn-logout ms-auto">
+            <a href="login.html"><button type="button" class="btn btn-primary m-5">Logout</button></a>
+        </div>
+
+
+
+
+    </div>
+    <div id="wrapper" class="hide">
+
+        <div id="sidebar">
+            <img src="assets/logo_dasboard.png" id="logoBrand" class="logoSidebar mx-auto d-block" alt="Image Profile">
+            <div><img src="logo-kopipas.svg" alt="" srcset=""></div>
+            <a href="chasier.html" class="sidebar-item active">
+                <div class="icon"><i class="fa-solid fa-cash-register"></i></div>
+                <div class="text">Table</div>
+            </a>
+            <!-- <a href="tables.html" class="sidebar-item">
+                <div class="icon"><i class="fa fa-light fa-chair"></i></div>
+                <div class="text">Tables</div>
+            </a>
+            <a href="takeway.html" class="sidebar-item">
+                <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                <div class="text">Takeaway</div>
+            </a> -->
+
+
+            <!-- <div class="devider"></div> -->
+        </div>
+
+        <div id="content">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="kotak bg-body">
+                            <label class="form-label" class="col-center ms-auto"><b>1</b></label>
+                            <div class="col-sm-7">
+                                <!-- + Add Button -->
+                                <button type="button" class="btn btn-danger">
+                                RESERVED
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="kotak bg-body">
+                            <label class="form-label" class="col-center ms-auto"><b>2</b></label>
+                            <div class="col-sm-7">
+                                <!-- + Add Button -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#TableModal">
+                                RESERVED
+                            </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="TableModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Table Order(2)</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th class="col-sm-2">#</th>
+                                                        <th class="col-sm-2">Name</th>
+                                                        <th class="col-sm-2">Amount</th>
+                                                        <th class="col-sm-2">Price</th>
+                                                        <th class="col-sm-2">Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="d-grid mx-auto">1</th>
+                                                        <td>Mie</td>
+                                                        <td>3</td>
+                                                        <td>Rp 7.000,00</td>
+                                                        <td>Rp 21.000,00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="d-grid mx-auto">2</th>
+                                                        <td>Ayam Geprek</td>
+                                                        <td>2</td>
+                                                        <td>Rp 10.000,00</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th colspan="4">Total :</th>
+                                                        <td>41.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="modal-footer ">
+                                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                                                <button type="button " class="btn btn-success ">
+                                                    <b class="modal-title fs-5 ">Pay</b>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="kotak bg-body ">
+                            <label class="form-label " class="col-center ms-auto "><b>3</b></label>
+                            <div class="col-sm-7 ">
+                                <!-- + Add Button -->
+                                <button type="button " class="btn btn-success " class="col-center ms-auto ">
+                            FREE
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>4</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>5</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>6</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>7</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>8</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-danger ">
+                                RESERVED
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>9</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>10</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>11</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-success ">
+                                FREE
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="kotak bg-body ">
+                                <label class="form-label " class="col-center ms-auto "><b>12</b></label>
+                                <div class="col-sm-7 ">
+                                    <!-- + Add Button -->
+                                    <button type="button " class="btn btn-danger "> RESERVED
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Bootstrap Script -->
+            <script src=" js/bootstrap.bundle.min.js "></script>
+
+            <!-- Fontawesome Script -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css "></script>
+
+            <script src="assets/js/script.js "></script>
+
+</body>
+
+</html>

@@ -87,11 +87,31 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label"><b>Code Table :</b></label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name or Username">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Order Name :</b></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Order Username">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Total :</b></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Total">
+                                            <label for="exampleFormControlInput1" class="form-label"><b>Price :</b></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Price">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-success">Summit</button>
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addstaticBackdrop1">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="addstaticBackdrop1" role="dialog" aria-labelledby="addstaticBackdropLabel1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                                <label for="addstaticBackdropLabel1" class="form-label"><b>SUCCESS</b></label>
+                                                <h6>Successfully added Order</h6>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light">OK</button>
                                         </div>
                                     </div>
                                 </div>
@@ -104,80 +124,60 @@
                         <thead>
                             <tr>
                                 <th class="col-sm-2">No.</th>
-                                <th class="col-sm-2">Nama Pesanan</th>
-                                <th class="col-sm-2">Jumlah</th>
-                                <th class="col-sm-2">Harga</th>
+                                <th class="col-sm-2">Order Name</th>
+                                <th class="col-sm-2">Total</th>
+                                <th class="col-sm-2">Price</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th class="d-grid mx-auto">1</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Ayam Geprek</td>
+                                <td>2</td>
+                                <td>Rp. 20.000,00</td>
                             </tr>
                             <tr>
                                 <th class="d-grid mx-auto">2</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">3</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">4</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">5</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">6</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">7</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th class="d-grid mx-auto">8</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Kangkung</td>
+                                <td>1</td>
+                                <td>Rp 7.000,00</td>
                             </tr>
                             <tr>
                                 <th colspan="2">Total :</th>
-                                <td colspan="2"></td>
+                                <td colspan="2">Rp 27.000,00</td>
                             </tr>
                         </tbody>
                     </table>
                     <button type="button" class="btn btn-dark"><i class="fa-sharp fa-solid fa-reply"></i>Back</button>
-                    <button type="button" class="btn btn-checkout">Checkout</button>
+                    <button type="button" class="btn btn-checkout" data-bs-toggle="modal" data-bs-target="#checkoutstaticBackdrop">Checkout</button>
+                </div>
+                <div class="modal fade" id="checkoutstaticBackdrop" role="dialog" aria-labelledby="checkoutstaticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <label for="checkoutstaticBackdropLabel" class="form-label"><b>SUCCESS</b></label>
+                                    <h6>Successfully checkout</h6>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light">OK</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap Script -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src=" js/bootstrap.bundle.min.js "></script>
 
     <!-- Fontawesome Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css "></script>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js "></script>
 
 </body>
 
