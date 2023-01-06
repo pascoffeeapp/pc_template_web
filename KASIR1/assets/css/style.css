@@ -124,7 +124,7 @@
 #wrapper #content {
     transition: 0.3s;
     background-color: #FFF8EA;
-    background-image: url("../coffee_content.svg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
