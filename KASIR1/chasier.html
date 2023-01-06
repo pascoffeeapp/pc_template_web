@@ -132,9 +132,25 @@
                                             <div class="modal-footer ">
                                                 <input type="email" class="form-control" id="exampleFormControlInput1">
                                                 <button type="button " class="btn btn-success ">
-                                                    <b class="modal-title fs-5 ">Pay</b>
+                                                    <b class="modal-title fs-5" data-bs-toggle="modal" data-bs-target="#PaystaticBackdrop">Pay</b>
                                                 </button>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="PaystaticBackdrop" role="dialog" aria-labelledby="PaystaticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <i class="fa-solid fa-circle-xmark"></i>
+                                                <label for="PaystaticBackdropLabel" class="form-label"><b>FAIL</b></label>
+                                                <h6>your money is not enough to make this purchase</h6>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light">OK</button>
                                         </div>
                                     </div>
                                 </div>
